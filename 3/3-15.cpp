@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 int getPower(int x, int y) {
 	if (y == 1) {
 		return x;
@@ -13,7 +12,6 @@ int getPower(int x, int y) {
 	else if (y == 0) {
 		return 1;
 	}
-
 	return y > 0 ? x*getPower(x, y - 1) : (1 / x)*getPower(x, y + 1);
 }
 double getPower(double x, double y) {
@@ -28,14 +26,11 @@ double getPower(double x, double y) {
 	}
 	return y > 0 ? x*getPower(x, y - 1) : (1 / x)*getPower(x, y + 1);
 }
-int sumFunction(int x, int y) {
-	return x + y;
-}
 
 int main()
 {
-	int a=0,m = 0;
-	double b=0;
+	int a = 0,m = 0;
+	double b = 0;
 	
 	cout << "输入整数a作为底数:";
 	cin >> a;
