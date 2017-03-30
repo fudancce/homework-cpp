@@ -1,7 +1,3 @@
-// ConsoleApplication1.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
-//
-
-#include "stdafx.h"
 #include <iostream>
 
 using namespace std;
@@ -41,15 +37,15 @@ int main()
 	int a=0,m = 0;
 	double b=0;
 	
-	cout << "ÊäÈëÕûÊıa×÷Îªµ×Êı:";
+	cout << "è¾“å…¥æ•´æ•°aä½œä¸ºåº•æ•°:";
 	cin >> a;
-	cout << "ÊäÈëÊµÊıb×÷Îªµ×Êı:";
+	cout << "è¾“å…¥å®æ•°bä½œä¸ºåº•æ•°:";
 	cin >> b;
-	cout << "ÊäÈëÕûÊım×÷ÎªÖ¸Êı";
+	cout << "è¾“å…¥æ•´æ•°mä½œä¸ºæŒ‡æ•°";
 	cin >> m;
 
-	cout << "aµÄm´Î·½Îª£º" << getPower(a, m) <<"\n"<< "bµÄm´Î·½Îª:" << getPower(b, (double)m) << endl;
-	cout << "Çë°´ÈÎÒâ¼üÍË³ö³ÌĞò...";
+	cout << "açš„mæ¬¡æ–¹ä¸ºï¼š" << getPower(a, m) <<"\n"<< "bçš„mæ¬¡æ–¹ä¸º:" << getPower(b, (double)m) << endl;
+	cout << "è¯·æŒ‰ä»»æ„é”®é€€å‡ºç¨‹åº...";
 	cin >> m;
     return 0;
 }
