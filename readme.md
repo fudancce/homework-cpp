@@ -6,3 +6,12 @@ C++作业源代码
 ------------
 <章>/<节>/<题目>.cpp
 <章>/<节>/examples/<例子>.cpp
+
+组织内开发方式
+==============
+组织内的成员的开发流程中不需要 `fork` 这个仓库，可以直接克隆这个仓库，然后基于`master` 创建新分支，编写代码，提交，然后
+在 `github` 上创建一个 [`Pull Request`](https://github.com/fudancce/homework-cpp/compare) ，PR的目标分支是 `master` ，然后进行 `review` 和合并。
+
+非组织内成员开发方式
+====================
+首先 `fork` 这个仓库，然后编码，提交到 `fork` 的仓库中，在 `github` 上创建 `PR` 到这个仓库，等待组内成员 `review` 并决定是否合并。
