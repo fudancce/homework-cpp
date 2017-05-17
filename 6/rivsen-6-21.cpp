@@ -1,32 +1,41 @@
+#include <string>
 #include <iostream>
 
 using namespace std;
 
-int strwordlen(string str)
-{
-    int length = 0;
-
-    for(int i = 0; i < str.length(); i++) {
-        if (
-                (str[i] >= 'a' && str[i] <= 'z')
-                || (str[i] >= 'A' && str[i] <= 'Z')
-           ) {
-            length++;
+int countAlphabet(string input) {
+    int count = 0;
+    
+    for (int i = 0; i < input.length(); i++) {
+        if ((input[i] >= 'a' && input[i] <= 'z') || (input[i] >= 'A' && input[i] <= 'Z')) {
+            count++;
+            //cout << "intpu[i] is:" << input[i] << endl;
         }
     }
 
-    return length;
+    return count;
 }
 
-int main() {
-    while(true) {
-        string str;
+int main()
+{
+    string input;
 
-        cout<<"输入一个英文句子(Ctrl+C退出): ";
-        getline(cin, str);
+    cout << "Please input your words:" << endl;
 
-        cout<<"输入的英文句子字母个数："<<strwordlen(str)<<endl;
+    getline(cin,input);
+
+    if (input.empty()) {
+        cout << "-->Please input something!" << endl;
+        cout << "Please press any key to escape." << endl;
+        cin >> input;
+        return -1;
     }
+    
+    cout << "-->input :" << input << endl;
+    cout << "-->Alphabet number is :" << countAlphabet(input) << endl;
+
+    cout << "Please press any key to escape." << endl;
+    cin >> input;
 
     return 0;
 }
